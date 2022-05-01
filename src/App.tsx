@@ -1,25 +1,29 @@
 import React from 'react';
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+import Pages from './Pages/Pages';
+import Header from './Component/Header';
+import { BrowserRouter, Link } from 'react-router-dom';
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+  return (<>
+  
+  <BrowserRouter>
+  
+    <nav id="colorlib-main-nav" className="border" role="navigation">
+    <Link to="/" className="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></Link>
+      <div className="js-fullheight colorlib-table">
+        
+      </div>
+    </nav>
+    <div id="colorlib-page">
+    <Header/>
+        <section className="ftco-counter tab-content" id="section-counter">
+          <Pages/>
+        </section>
     </div>
+    </BrowserRouter>
+    </>
   );
 }
 
