@@ -9,13 +9,6 @@ function App() {
   return (<>
   
   <BrowserRouter>
-  
-    <nav id="colorlib-main-nav" className="border" role="navigation">
-    <Link to="/" className="js-colorlib-nav-toggle colorlib-nav-toggle active"><i></i></Link>
-      <div className="js-fullheight colorlib-table">
-        
-      </div>
-    </nav>
     <div id="colorlib-page">
     <Header/>
         <section className="ftco-counter tab-content" id="section-counter">
